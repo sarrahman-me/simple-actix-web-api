@@ -1,0 +1,29 @@
+GET http://localhost:8080/book
+
+###
+
+GET http://localhost:8080/book/1
+
+###
+
+POST http://localhost:8080/book
+Content-Type: application/json
+
+{
+    "title": "Bulan",
+    "author": "Tereliye"
+}
+
+###
+
+PATCH http://localhost:8080/book/1
+Content-Type: application/json
+
+{
+    "title": "Bintang update",
+    "author": "Sarah"
+}
+
+###
+
+DELETE http://localhost:8080/book/1
